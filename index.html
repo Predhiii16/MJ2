@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>For You, My Love 🩷</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@200;300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Dancing+Script:wght@400..700&family=Caveat:wght@400..700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <!-- Global Romantic Particles -->
+  <div id="global-particles"></div>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="fullscreen-section">
+    <p class="loading-text fade-pulse">Preparing something special for you... 🩷</p>
+    <div class="progress-bar-container">
+      <div id="progress-bar"></div>
+    </div>
+  </div>
+
+  <!-- Music Controller -->
+  <div id="music-controller">
+    <div class="music-visualizer hidden" id="music-visualizer">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <button id="toggle-music">🎵 Music ON</button>
+  </div>
+
+  <audio id="bg-audio" loop preload="auto"></audio>
+
+  <!-- Opening Experience -->
+  <section id="opening-section" class="fullscreen-section hidden">
+    <div class="opening-text-container">
+      <p id="opening-text-1" class="opening-text">Hey, my love...</p>
+      <p id="opening-text-2" class="opening-text hidden">I made something for you.</p>
+      <p id="opening-text-3" class="opening-text hidden">Because your birthday deserves more than just a wish.</p>
+      <button id="enter-btn" class="btn-primary hidden">[ ENTER MY LITTLE WORLD 🩷 ]</button>
+    </div>
+  </section>
+
+  <!-- Particle Container -->
+  <div id="particles-container"></div>
+
+
+
+  <!-- Main Website Content -->
+  <main id="main-content" class="hidden">
+    
+    <!-- CHAPTER 01 -->
+    <div class="chapter" data-chapter="1">
+      <!-- Hero Section -->
+      <section id="hero-section" class="cinematic-section">
+        <div class="hero-bg parallax-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1 class="hero-title">Happy Birthday,<br>My Love 🩷</h1>
+          <p class="hero-subtitle">Every memory with you is a story I never want to end.</p>
+        </div>
+        <button id="hero-enter-btn" class="btn-primary" style="margin-top: 40px; position: relative; z-index: 10;">[ ENTER OUR WORLD 🩷 ]</button>
+      </section>
+
+
+    </div>
+
+    <!-- CHAPTER 02 -->
+    <div class="chapter" data-chapter="2">
+      <!-- Our Story Timeline -->
+      <section id="story-section" class="vertical-story-section">
+        <div class="story-bg-animation"></div>
+        <h2 class="section-title" style="position: relative; z-index: 1; color: var(--c-cream);">Our Story</h2>
+        <div class="timeline-container" id="timeline-container">
+          <!-- Injected via JS -->
+        </div>
+      </section>
+
+      <!-- Interactive Photo Experience -->
+      <section id="interactive-photo-section" class="cinematic-section graph-paper-bg">
+        <h2 class="section-title text-dark">Beautiful Memories</h2>
+        <div class="scrapbook-collage-container" id="scrapbook-collage-container">
+          <!-- Scrapbook items injected via JS -->
+        </div>
+      </section>
+
+      <!-- Polaroid Memory Cards -->
+      <section id="polaroid-section" class="cinematic-section premium-mesh-bg" style="position: relative; overflow: hidden;">
+        
+        <!-- Floating Love Words Background -->
+        <div class="floating-words-bg">
+          <span class="float-word" style="--delay: 0s; --top: 10%; --duration: 20s;">Love</span>
+          <span class="float-word" style="--delay: 5s; --top: 30%; --duration: 25s;">Forever</span>
+          <span class="float-word" style="--delay: 2s; --top: 50%; --duration: 18s;">You & Me</span>
+          <span class="float-word" style="--delay: 8s; --top: 70%; --duration: 22s;">Always</span>
+          <span class="float-word" style="--delay: 12s; --top: 85%; --duration: 28s;">Soulmate</span>
+          <span class="float-word" style="--delay: 15s; --top: 20%; --duration: 19s;">Beautiful</span>
+          <span class="float-word" style="--delay: 10s; --top: 60%; --duration: 24s;">Endless</span>
+          <span class="float-word" style="--delay: 7s; --top: 40%; --duration: 21s;">Magic</span>
+        </div>
+
+        <h2 class="section-title text-dark" style="position: relative; z-index: 2;">Pieces of Us</h2>
+        <div class="polaroid-container" id="polaroid-container" style="position: relative; z-index: 2;">
+          <!-- Injected via JS -->
+        </div>
+      </section>
+    </div>
+
+    <!-- CHAPTER 03 -->
+    <div class="chapter" data-chapter="3">
+      <!-- The Moments I Love -->
+      <section id="moments-section" class="cinematic-section midnight-bg">
+        <h2 class="section-title text-light">The Moments I Love</h2>
+        <div class="cards-grid" id="moments-grid">
+          <!-- Cards injected via JS -->
+        </div>
+      </section>
+
+      <!-- Interactive Heart -->
+      <section id="interactive-heart-section" class="cinematic-section midnight-bg">
+        <div class="heart-container" id="heart-container">
+          <p id="heart-instruction" class="text-light" style="font-size:1.2rem; letter-spacing:4px; font-family: var(--font-sans); text-transform: uppercase; margin-bottom:4rem; opacity:0.7;">Awaken My Heart</p>
+          
+          <div class="glowing-heart-wrapper" id="glowing-heart">
+            <div class="heart-ripple"></div>
+            <div class="heart-ripple delay-1"></div>
+            <div class="heart-emoji">🩷</div>
+          </div>
+          
+        </div>
+        <div class="heart-messages text-light" id="heart-messages" style="margin-top:4rem;">
+          <p id="heart-msg-1" class="hidden" style="font-size:2.8rem; text-shadow:0 0 15px rgba(255,105,180,0.6);">My heart chose you.</p>
+          <p id="heart-msg-2" class="hidden" style="font-size:1.2rem; margin-top:1.5rem; opacity:0.8; letter-spacing:1px; font-family: var(--font-sans);">And it will keep choosing you, every single day.</p>
+        </div>
+      </section>
+
+      <!-- Promises Section -->
+      <section id="promises-section" class="cinematic-section champagne-bg">
+        <h2 class="section-title text-dark">My Promises to You</h2>
+        <div class="promises-container">
+          <div class="promise-card">
+            <div class="promise-icon">✨</div>
+            <p>To always be your safe place, no matter what happens.</p>
+          </div>
+          <div class="promise-card">
+            <div class="promise-icon">🤝</div>
+            <p>To hold your hand through every chapter of our lives.</p>
+          </div>
+          <div class="promise-card">
+            <div class="promise-icon">♾️</div>
+            <p>To love you endlessly, unconditionally, and forever.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- CHAPTER 04 -->
+    <div class="chapter" data-chapter="4">
+      <!-- Secret Message Interaction -->
+      <section id="secret-message-section" class="cinematic-section cream-bg">
+        <div class="secret-initial" id="secret-initial">
+          <p class="teaser-text" id="secret-teaser"></p>
+          <button id="secret-reveal-btn" class="btn-primary mt-2"></button>
+        </div>
+        <div class="secret-reveal hidden" id="secret-reveal">
+          <div class="heartbeat-bg" id="heartbeat-bg">🩷</div>
+          <div class="secret-texts">
+            <p id="secret-msg-1" class="hidden secret-msg"></p>
+            <p id="secret-msg-2" class="hidden secret-msg"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- If You Were Here -->
+      <section id="if-you-were-here-section" class="cinematic-section black-bg">
+        <div class="iywh-bg" id="iywh-bg"></div>
+        <div class="iywh-overlay"></div>
+        <div class="iywh-content">
+          <h2 class="section-title text-light mb-2">If you were here right now...</h2>
+          <div class="iywh-lines" id="iywh-lines">
+            <!-- Injected via JS -->
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- CHAPTER 05 -->
+    <div class="chapter" data-chapter="5">
+      <!-- Love Letter -->
+      <section id="letter-section" class="cinematic-section royal-bg">
+        <div class="royal-scroll" id="royal-scroll">
+          <div class="scroll-ribbon-container" id="scroll-ribbon">
+            <div class="ribbon-bow">
+              <i class="fas fa-gift" style="font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
+              Click to Open
+            </div>
+            <div class="ribbon-band"></div>
+          </div>
+          
+          <div class="scroll-wrapper">
+            <div class="scroll-roller scroll-top">
+              <div class="scroll-knob left"></div>
+              <div class="scroll-knob right"></div>
+            </div>
+            
+            <div class="scroll-paper" id="scroll-paper">
+              <div class="scroll-content">
+                <p id="typewriter-letter" class="handwritten-text"></p>
+              </div>
+            </div>
+            
+            <div class="scroll-roller scroll-bottom" id="scroll-bottom-roller">
+              <div class="scroll-knob left"></div>
+              <div class="scroll-knob right"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+    </div>
+
+    <!-- CHAPTER 06 -->
+    <div class="chapter" data-chapter="6">
+      <!-- Video Memories Carousel -->
+      <section id="video-section" class="cinematic-section black-bg">
+        <h2 class="section-title text-light mb-2">Moving Pictures</h2>
+        <div class="video-carousel" id="video-carousel">
+          <!-- Videos injected via JS -->
+        </div>
+        <!-- Fullscreen Video Overlay -->
+        <div id="fullscreen-video-overlay" class="hidden">
+          <button id="close-video-btn" class="btn-close">✕ Close</button>
+          <div class="fullscreen-video-container" id="fullscreen-video-container"></div>
+        </div>
+      </section>
+
+
+
+      <!-- Special Birthday Section -->
+      <section id="birthday-section" class="cinematic-section black-bg">
+        <div class="birthday-text-container">
+          <p id="bday-text-1" class="dramatic-text hidden">Today isn't just another day...</p>
+          <p id="bday-text-2" class="dramatic-text hidden">Today is the day my favorite person was born.</p>
+          <h1 id="bday-text-3" class="dramatic-text grand-bday hidden">HAPPY BIRTHDAY 🩷</h1>
+        </div>
+        <audio id="birthday-audio" preload="auto"></audio>
+      </section>
+
+      <!-- Ring Surprise -->
+      <section id="ring-section" class="cinematic-section black-bg">
+        <div class="ring-container">
+          <img id="ring-img" src="" alt="Ring" class="glowing-ring">
+        </div>
+        <div class="ring-text-container">
+          <p id="ring-text-1" class="ring-text hidden">A little something for you...</p>
+          <p id="ring-text-2" class="ring-text hidden">Not because it's expensive...</p>
+          <p id="ring-text-3" class="ring-text hidden">Because I wanted you to have something that reminds you of me. 🩷</p>
+          <p id="ring-text-4" class="ring-text hidden glowing-infinity">♾️ No beginning.<br>No ending.<br>Just us.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- CHAPTER 07 -->
+    <div class="chapter" data-chapter="7">
+
+
+      <!-- Final Interaction -->
+      <section id="final-interaction-section" class="fullscreen-section black-bg stars-bg">
+        <div class="interaction-container">
+          <h2 class="interaction-q text-light" id="final-forever-q"></h2>
+          <div class="final-buttons-container" id="final-buttons-container">
+            <button id="final-yes-btn" class="btn-primary"></button>
+            <button id="final-no-btn" class="btn-secondary">NO</button>
+          </div>
+          <div id="final-yes-text" class="hidden final-yes-answer">
+            <!-- Injected via JS -->
+          </div>
+          <h2 id="final-names" class="final-names hidden"></h2>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
