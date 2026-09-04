@@ -40,26 +40,26 @@ export const memoryData = {
       title: "Today",
       date: "May 11th 2026",
       description: "A day I will never forget.",
-      photo: "/assets/photos/photo_today.jpg"
+      photo: "./assets/photos/photo_today.jpg"
     }
   ],
   polaroids: [
-    { photo: "/assets/photos/photo05.jpg", date: "Feb 25th 2026", caption: "That day 🩷" },
-    { photo: "/assets/photos/photo04.jpg", date: "11th May 2026", caption: "One of my favorite memories." },
-    { photo: "/assets/photos/polaroid-hands.jpg", date: "Jun 30th 2026", caption: "Just us." },
-    { photo: "/assets/photos/polaroid-saree.jpg", date: "Jan 13th 2026", caption: "Always." }
+    { photo: "./assets/photos/photo05.jpg", date: "Feb 25th 2026", caption: "That day 🩷" },
+    { photo: "./assets/photos/photo04.jpg", date: "11th May 2026", caption: "One of my favorite memories." },
+    { photo: "./assets/photos/polaroid-hands.jpg", date: "Jun 30th 2026", caption: "Just us." },
+    { photo: "./assets/photos/polaroid-saree.jpg", date: "Jan 13th 2026", caption: "Always." }
   ],
   interactivePhoto: {
-    center: "/collage/1.jpg",
+    center: "./collage/1.jpg",
     orbit: [
-      "/collage/2.jpg",
-      "/collage/3.jpg",
-      "/collage/4.jpg",
-      "/collage/5.jpg",
-      "/collage/6.jpg",
-      "/collage/7.jpg",
-      "/collage/8.jpg",
-      "/collage/9.jpg"
+      "./collage/2.jpg",
+      "./collage/3.jpg",
+      "./collage/4.jpg",
+      "./collage/5.jpg",
+      "./collage/6.jpg",
+      "./collage/7.jpg",
+      "./collage/8.jpg",
+      "./collage/9.jpg"
     ]
   },
   loveCounter: {
@@ -87,7 +87,7 @@ export const memoryData = {
     ]
   },
   ifYouWereHere: {
-    photo: "/assets/photos/photo09.jpg",
+    photo: "./assets/photos/photo09.jpg",
     lines: [
       "I'd probably smile first.",
       "Then annoy you.",
@@ -97,10 +97,10 @@ export const memoryData = {
     ]
   },
   envelopes: [
-    { label: "Open Me 🩷", photo: "/assets/photos/photo01.jpg", message: "You make my heart smile." },
-    { label: "Another Memory", photo: "/assets/photos/photo02.jpg", message: "Every moment with you is precious." },
-    { label: "Just For You", photo: "/assets/photos/photo03.jpg", message: "My favorite distraction." },
-    { label: "One Last Thing", photo: "/assets/photos/photo04.jpg", message: "I love you." }
+    { label: "Open Me 🩷", photo: "./assets/photos/photo01.jpg", message: "You make my heart smile." },
+    { label: "Another Memory", photo: "./assets/photos/photo02.jpg", message: "Every moment with you is precious." },
+    { label: "Just For You", photo: "./assets/photos/photo03.jpg", message: "My favorite distraction." },
+    { label: "One Last Thing", photo: "./assets/photos/photo04.jpg", message: "I love you." }
   ],
   interactiveHeart: {
     button: "Tap my heart 🩷",
@@ -112,42 +112,42 @@ export const memoryData = {
   hiddenPhoto: {
     teaser: "There's one more memory...",
     button: "Reveal 🩷",
-    photo: "/assets/photos/photo10.jpg",
+    photo: "./assets/photos/photo10.jpg",
     caption: "The most beautiful view."
   },
   videoMemories: [
     {
-      video: "/assets/videos/my_video.mp4",
+      video: "./assets/videos/my_video.mp4",
       title: "Memory 1",
       date: "2025"
     },
     {
-      video: "/assets/videos/my_video1.mp4",
+      video: "./assets/videos/my_video1.mp4",
       title: "Memory 2",
       date: "2025"
     },
     {
-      video: "/assets/videos/my_video2.mp4",
+      video: "./assets/videos/my_video2.mp4",
       title: "Memory 3",
       date: "2025"
     },
     {
-      video: "/assets/videos/my_video3.mp4",
+      video: "./assets/videos/my_video3.mp4",
       title: "Memory 4",
       date: "2025"
     },
     {
-      video: "/assets/videos/my_video4.mp4",
+      video: "./assets/videos/my_video4.mp4",
       title: "Memory 5",
       date: "2025"
     },
     {
-      video: "/assets/videos/my_video5.mp4",
+      video: "./assets/videos/my_video5.mp4",
       title: "Memory 6",
       date: "2025"
     },
     {
-      video: "/assets/videos/my_video6.mp4",
+      video: "./assets/videos/my_video6.mp4",
       title: "Memory 7",
       date: "2025"
     }
@@ -205,12 +205,12 @@ Predeesh ❤️`,
     ]
   },
   audio: {
-    background: "/assets/audio/background.mp3",
-    birthday: "/assets/audio/birthday.mp3",
-    voiceMessage: "/assets/audio/song.mp3"
+    background: "./assets/audio/background.mp3",
+    birthday: "./assets/audio/birthday.mp3",
+    voiceMessage: "./assets/audio/song.mp3"
   },
   photos: {
-    hero: "/assets/photos/hero.jpg",
-    ring: "/assets/photos/ring.jpg"
+    hero: "./assets/photos/hero.jpg",
+    ring: "./assets/photos/ring.jpg"
   }
 };
