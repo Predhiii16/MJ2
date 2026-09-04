@@ -1,6 +1,6 @@
 import { memoryData } from './data/memories.js';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import gsap from 'https://esm.sh/gsap';
+import { ScrollTrigger } from 'https://esm.sh/gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
