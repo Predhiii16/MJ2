@@ -265,7 +265,7 @@ function populateData() {
     const div = document.createElement('div');
     div.className = 'video-card glass';
     div.innerHTML = `
-      <video src="${v.video}" loop muted playsinline></video>
+      <video src="${v.video}" loop muted playsinline autoplay></video>
       <div class="video-overlay-play">▶</div>
       <p class="video-subtitle">${v.title} - ${v.date}</p>
     `;
